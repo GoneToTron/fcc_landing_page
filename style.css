@@ -1,0 +1,127 @@
+html{
+    width: 80%;
+    font-family: 'Courier New', Courier, monospace;
+}
+#page-wrapper {
+    position: relative;
+  }
+#header{
+    overflow: hidden;
+    position: fixed; 
+    width: 80%;
+    top: 0; 
+    box-shadow: 0 0 1em #888888;
+    background-color: rgb(255, 255, 255);
+    min-height: 75px;
+    max-height: 75px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    max-height: 75px;
+  }
+  
+  @media (max-height: 75px) {
+    .logo {
+      margin-top: 15px;
+      width: 100%;
+      position: relative;
+    }
+  }
+  
+  .logo > img {
+    width: 100%;
+    max-height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 5px;
+  }
+  
+  @media (max-height: 75px) {
+    .logo > img {
+      margin: 0 auto;
+    }
+  }
+  
+  nav {
+    font-weight: bolder;
+  }
+
+li {
+    list-style: none;
+  }
+  
+  a {
+    color: #000;
+    text-decoration: none;
+  }
+nav {
+    font-weight: 400;
+    position: relative;
+}
+  
+  @media (max-width: 650px) {
+    nav {
+      margin-top: 10px;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: right;
+      text-align: right;
+    }
+    nav li {
+      padding-bottom: 5px;
+    }
+  }
+  
+  nav > ul {
+    width: 35vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  @media (max-width: 650px) {
+    nav > ul {
+      flex-direction: column;
+    }
+  }    
+
+body{
+    margin-top: 1em;
+    margin-left: 10%;
+}
+.container {
+    display: grid; 
+    grid-template-rows: 1fr 1fr 1fr;
+    height: auto; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+    "toprow"
+    "midrow"
+    "downrow";
+}
+#demTable {
+    width:100%;
+    border:solid #ffffff;
+    border-collapse:separate;
+    border-spacing:3px;
+    padding:5px;
+}
+#demTable th {
+    border:solid #ffffff;
+    padding:5px;
+    background: #f0f0f0;
+    color: #313030;
+}
+#demTable td {
+    border:solid #ffffff;
+    text-align:center;
+    padding:5px;
+    background: #ffffff;
+    color: #313030;
+}
