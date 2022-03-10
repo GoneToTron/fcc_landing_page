@@ -4,15 +4,9 @@ body{
   width: 100%
 
 }
-@media only screen and (max-width : 1200px) { }
+@media only screen and (max-width : 480px) { .navbar a { font-size: large;} }
 
-@media only screen and (max-width : 992px) { }
-
-@media only screen and (max-width : 768px) { }
-
-@media only screen and (max-width : 480px) { }
-
-@media only screen and (max-width : 320px) { }
+@media only screen and (max-width : 320px) { .navbar a { font-size: large;} }
 p{
   margin-left: 20px;
 }
