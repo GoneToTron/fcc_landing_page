@@ -1,17 +1,21 @@
 body{
   font-family: 'Courier New', Courier, monospace;
+  font-size: larger;
+}
+p{
+  margin-left: 20px;
 }
 .container {  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-  gap: 10px 10px;
+  grid-template-rows: 0.2fr 1fr 1fr 0.2fr 0.2fr;
+  gap: 30px 10px;
   grid-auto-flow: row;
   grid-template-areas:
     "Head Head Head"
     "O-mnie O-mnie O-mnie-fot"
     "Masa-fot Masa Masa"
-    "Cennik Cennik Cennik"
-    "Kontakt Kontakt Kontakt";
+    "Cennik1 Cennik2 Cennik3"
+    "Kontakt Kontakt Kontakt2";
 }
 
 .O-mnie { grid-area: O-mnie; }
@@ -19,6 +23,7 @@ body{
 .Head { grid-area: Head; }
 
 .Kontakt { grid-area: Kontakt; }
+.Kontakt2 { grid-area: Kontakt2; }
 
 .O-mnie-fot { grid-area: O-mnie-fot; }
 
@@ -26,16 +31,20 @@ body{
 
 .Masa { grid-area: Masa; }
 
-.Cennik { grid-area: Cennik; }
+.Cennik1 { grid-area: Cennik1; }
+
+.Cennik2 { grid-area: Cennik2; }
+
+.Cennik3 { grid-area: Cennik3; }
+
 .navbar {
   overflow: hidden;
   background-color: white;
   position: fixed; 
   top: 10px; 
-  width: 100%; 
+  width: 100%;
   box-shadow: 0 0 1em #888888;
-  
-}
+  }
 .navbar a {
   float:inline-start;
   color: black;
@@ -44,8 +53,7 @@ body{
   text-decoration: none;
   font-size: large;
   text-align: center;
-  
-}
+  }
 
 .navbar a:hover {
   background: #ddd;
@@ -54,5 +62,21 @@ body{
 .logo {
   display: inline;
   vertical-align:middle;
+}
+.imgfit{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    box-shadow: 0 0 1em #888888;
   
+}
+.socico{
+  display: inline;
+  vertical-align:middle;
+  max-height: 30px;
+  padding-left: auto;
+}
+.cennik{
+  background-color: pink;
+}
  
