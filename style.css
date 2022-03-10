@@ -5,7 +5,6 @@ body{
 
 }
 @media only screen and (max-width : 480px) { .navbar a { font-size: large;} }
-
 @media only screen and (max-width : 320px) { .navbar a { font-size: large;} }
 p{
   margin-left: 20px;
@@ -21,6 +20,8 @@ p{
     "Masa-fot Masa Masa"
     "Cennik2 Cennik1 Cennik3"
     "Kontakt Kontakt Kontakt";
+    margin-left: 10em;
+    margin-right: 10em;
 }
 
 .O-mnie { grid-area: O-mnie; }
