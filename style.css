@@ -1,7 +1,18 @@
 body{
   font-family: 'Courier New', Courier, monospace;
   font-size: larger;
+  width: 100%
+
 }
+@media only screen and (max-width : 1200px) { }
+
+@media only screen and (max-width : 992px) { }
+
+@media only screen and (max-width : 768px) { }
+
+@media only screen and (max-width : 480px) { }
+
+@media only screen and (max-width : 320px) { }
 p{
   margin-left: 20px;
 }
@@ -14,16 +25,19 @@ p{
     "Head Head Head"
     "O-mnie O-mnie O-mnie-fot"
     "Masa-fot Masa Masa"
-    "Cennik1 Cennik2 Cennik3"
-    "Kontakt Kontakt Kontakt2";
+    "Cennik2 Cennik1 Cennik3"
+    "Kontakt Kontakt Kontakt";
 }
 
 .O-mnie { grid-area: O-mnie; }
 
 .Head { grid-area: Head; }
 
-.Kontakt { grid-area: Kontakt; }
-.Kontakt2 { grid-area: Kontakt2; }
+.Kontakt {  
+        grid-area: Kontakt;
+        margin-left: auto;
+        margin-right: auto;
+        width: 10em }
 
 .O-mnie-fot { grid-area: O-mnie-fot; }
 
