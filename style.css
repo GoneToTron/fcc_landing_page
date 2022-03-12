@@ -18,8 +18,8 @@ p{
     "Masa-fot Masa Masa"
     "Cennik2 Cennik1 Cennik3"
     "Kontakt Kontakt Kontakt";
-    margin-left: 10em;
-    margin-right: 10em;
+    margin-left: 10%;
+    margin-right: 10%;
 }
 
 .O-mnie { grid-area: O-mnie; }
