@@ -30,7 +30,7 @@ p{
         grid-area: Kontakt;
         margin-left: auto;
         margin-right: auto;
-        width: 10em }
+        }
 
 .O-mnie-fot { grid-area: O-mnie-fot; }
 
