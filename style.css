@@ -1,124 +1,36 @@
-body{
-  font-family: 'Courier New', Courier, monospace;
-  font-size: larger;
-  width: 100%
 
-}
-p{
-  margin-left: 20px;
-}
-.container {  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 1fr 1fr 0.2fr 0.2fr;
-  gap: 30px 10px;
-  grid-auto-flow: row;
-  grid-template-areas:
-    "Head Head Head"
-    "O-mnie O-mnie O-mnie-fot"
-    "Masa-fot Masa Masa"
-    "Cennik2 Cennik1 Cennik3"
-    "Kontakt Kontakt Kontakt";
-    margin-left: 10%;
-    margin-right: 10%;
-}
-
-.O-mnie { grid-area: O-mnie; }
-
-.Head { grid-area: Head; }
-
-.Kontakt {  
-        grid-area: Kontakt;  }
-
-.O-mnie-fot { grid-area: O-mnie-fot; }
-
-.Masa-fot { grid-area: Masa-fot; }
-
-.Masa { grid-area: Masa; }
-
-.Cennik1 { grid-area: Cennik1; }
-
-.Cennik2 { grid-area: Cennik2; }
-
-.Cennik3 { grid-area: Cennik3; }
-
-.navbar {
-  overflow: hidden;
-  background-color: white;
-  position: fixed; 
-  top: 10px; 
-  width: 100%;
-  box-shadow: 0 0 1em #888888;
-  }
-.navbar a {
-  float:inline-start;
-  color: black;
-  font-weight: bolder;
-  padding: 10px 10px 10px 10px;
-  text-decoration: none;
-  font-size: large;
-  text-align: center;
-  }
-
-.navbar a:hover {
-  background: #ddd;
-  color: black;
-}
 .logo {
-  display: inline;
-  vertical-align:middle;
-}
-.imgfit{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 0 0 1em #888888;
+  position: absolute;
+  margin: auto;
   
 }
-.socico{
-  display: inline;
-  vertical-align:middle;
-  max-height: 30px;
-  padding-left: auto;
-}
-.cennik{
-  background-color: pink;
-}
-#emailform {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
- 
-}
-
-#emailform > h2 {
-  margin-bottom: 20px;
-  word-wrap: break-word;
-}
-
-#emailform  input[type='email'] {
-  max-width: 275px;
-  width: 100%;
-  padding: 5px;
-}
-
-#emailform  input[type='submit'] {
-  max-width: 150px;
-  width: 100%;
-  height: 30px;
-  margin: 15px 0;
-  border: 0;
-  background-color: #f1c40f;
-}
-
-#emailform  input[type='submit']:hover {
-  background-color: orange;
-  transition: background-color 1s;
-}
-
-@media (max-width: 650px) {
-  #emailform  {
-    margin-top: 120px;
+.navbar-nav {
+  margin-left: auto;
+   }
+   .fa {
+    padding: 8px;
+    font-size: 30px;
+    width: 30px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    border-radius: 50%;
   }
-}
+  a:hover {
+    font-weight: bold;
+  }
+  
+  .fa:hover {
+      opacity: 1;
+      background-color: white;
+  }
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  .fa-instagram {
+    background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
+    color: white;
+  }
+  
